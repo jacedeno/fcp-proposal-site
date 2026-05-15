@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Propuesta para Full Color Painting · GeekendZone</title>
+<meta name="description" content="Una propuesta de mejora SEO, presencia local y herramienta de gestión para Full Color Painting, LLC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F8F6F1;
+    --bg-elev: #FFFFFF;
+    --ink: #161617;
+    --ink-soft: #2D2D30;
+    --muted: #6B6B6B;
+    --muted-soft: #9B9B9B;
+    --line: #E5E2DA;
+    --accent: #C9472B;
+    --accent-soft: #F2E0DA;
+    --accent-deep: #8A2E18;
+    --good: #2F6F4F;
+    --good-soft: #E2EFE8;
+    --warn: #B7791F;
+    --warn-soft: #FAEDD7;
+    --max: 1120px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection { background: var(--accent); color: white; }
+
+  .wrap {
+    width: 100%;
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+
+  h1 { font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 500; }
+  h2 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); }
+  h3 { font-size: 1.35rem; font-weight: 600; }
+  h4 { font-size: 1.05rem; font-weight: 600; font-family: 'Inter', sans-serif; letter-spacing: -0.005em; }
+
+  p { color: var(--ink-soft); }
+  p + p { margin-top: 1em; }
+
+  em.brand {
+    font-style: italic;
+    font-family: 'Fraunces', Georgia, serif;
+    color: var(--accent-deep);
+  }
+
+  strong { font-weight: 600; color: var(--ink); }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; transition: opacity .15s; }
+  a:hover { opacity: .7; }
+
+  /* Header */
+  header.top {
+    border-bottom: 1px solid var(--line);
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(8px);
+    background: rgba(248, 246, 241, 0.92);
+  }
+  .top-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .brandmark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+  }
+  .brandmark .dot {
+    width: 10px;
+    height: 10px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .top-label {
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 100px 0 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-kicker {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+  .hero h1 {
+    max-width: 880px;
+    margin-bottom: 36px;
+  }
+  .hero h1 .accent { color: var(--accent); }
+  .hero h1 .italic { font-style: italic; }
+  .hero-lede {
+    max-width: 620px;
+    font-size: 1.18rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  .hero-meta {
+    display: flex;
+    gap: 36px;
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+  .hero-meta-item {
+    font-size: 0.85rem;
+  }
+  .hero-meta-item .label {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 0.72rem;
+    margin-bottom: 6px;
+  }
+  .hero-meta-item .value {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  /* Sections */
+  section.block {
+    padding: 88px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .section-head {
+    margin-bottom: 56px;
+    max-width: 760px;
+  }
+  .section-head .kicker {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  .section-head h2 {
+    margin-bottom: 22px;
+  }
+  .section-head p {
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+  }
+
+  /* Status grid */
+  .status-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  @media (max-width: 720px) {
+    .status-grid { grid-template-columns: 1fr; }
+  }
+  .status-card {
+    padding: 32px;
+    border-radius: 6px;
+    background: var(--bg-elev);
+    border: 1px solid var(--line);
+  }
+  .status-card.good { border-color: var(--good-soft); }
+  .status-card.warn { border-color: var(--warn-soft); }
+  .status-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .status-card.good h3 { color: var(--good); }
+  .status-card.warn h3 { color: var(--warn); }
+  .pill {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .pill.good { background: var(--good-soft); color: var(--good); }
+  .pill.warn { background: var(--warn-soft); color: var(--warn); }
+  .status-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  .status-card li {
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 0.96rem;
+  }
+  .status-card li:first-child { border-top: 0; padding-top: 0; }
+  .status-card li:last-child { padding-bottom: 0; }
+  .status-card li strong { display: block; color: var(--ink); margin-bottom: 4px; }
+
+  /* Opportunities */
+  .opps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-top: 1px solid var(--line);
+  }
+  .opp {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 32px;
+  }
+  @media (max-width: 720px) {
+    .opp { grid-template-columns: 1fr; gap: 16px; }
+  }
+  .opp-number {
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--accent);
+    line-height: 1;
+    font-style: italic;
+  }
+  .opp-body h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+  .opp-rows {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 6px 24px;
+    margin-top: 18px;
+  }
+  @media (max-width: 540px) {
+    .opp-rows { grid-template-columns: 1fr; gap: 4px; }
+    .opp-rows .opp-row-value { margin-bottom: 14px; }
+  }
+  .opp-row-label {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    font-weight: 600;
+    padding-top: 4px;
+  }
+  .opp-row-value {
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+  }
+
+  /* Bilingual */
+  .bilingual {
+    background: var(--ink);
+    color: #F4F1EA;
+    border: none;
+    padding: 96px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .bilingual h2 { color: #F8F5EF; }
+  .bilingual .kicker { color: #E6A98D; }
+  .bilingual p { color: #C8C4BD; }
+  .bilingual .section-head { margin-bottom: 48px; }
+  .bilingual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+  @media (max-width: 720px) {
+    .bilingual-grid { grid-template-columns: 1fr; }
+  }
+  .bilingual-card {
+    padding: 28px 0;
+    border-top: 1px solid #3a3a3d;
+  }
+  .bilingual-card h3 {
+    color: #F4F1EA;
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  .bilingual-stat {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #E6A98D;
+    margin: 32px 0 20px;
+    font-weight: 400;
+  }
+  .bilingual-quote {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #DCD8D0;
+    border-left: 2px solid var(--accent);
+    padding-left: 20px;
+    margin-top: 32px;
+  }
+
+  /* Dashboard */
+  .dashboard-section { padding: 96px 0; border-top: 1px solid var(--line); }
+  .dash-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  @media (max-width: 880px) {
+    .dash-grid { grid-template-columns: 1fr; gap: 48px; }
+  }
+  .dash-text h2 { margin-bottom: 22px; }
+  .dash-text p { font-size: 1.05rem; }
+  .dash-features {
+    margin-top: 32px;
+    list-style: none;
+    padding: 0;
+  }
+  .dash-features li {
+    padding: 18px 0;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+  .dash-features li:first-child { border-top: 0; }
+  .dash-features .icn {
+    width: 32px; height: 32px;
+    border-radius: 6px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .dash-features strong { display: block; margin-bottom: 4px; }
+  .dash-features p { color: var(--muted); font-size: 0.95rem; line-height: 1.55; }
+
+  /* Mock dashboard panel */
+  .mock {
+    background: var(--bg-elev);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: 0 1px 0 rgba(22,22,23,0.02), 0 30px 60px -30px rgba(22,22,23,0.18);
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+  }
+  .mock-bar {
+    background: #FAFAF7;
+    border-bottom: 1px solid var(--line);
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .mock-dot { width: 10px; height: 10px; border-radius: 50%; background: #ddd; }
+  .mock-dot.red { background: #FF5F57; }
+  .mock-dot.yel { background: #FEBC2E; }
+  .mock-dot.grn { background: #28C840; }
+  .mock-url {
+    flex: 1;
+    text-align: center;
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+  }
+  .mock-body { padding: 22px; }
+  .mock-h {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .mock-score {
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--ink);
+  }
+  .mock-score .pct { color: var(--muted-soft); font-size: 1.4rem; }
+  .mock-trend {
+    display: inline-block;
+    margin-left: 8px;
+    color: var(--good);
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: var(--good-soft);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+  .mock-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+  }
+  .mock-row:first-of-type { margin-top: 22px; }
+  .mock-row .lbl { color: var(--ink-soft); }
+  .mock-row .val { font-weight: 600; color: var(--ink); }
+  .mock-bar2 {
+    height: 4px;
+    background: var(--line);
+    border-radius: 2px;
+    margin-top: 6px;
+    overflow: hidden;
+  }
+  .mock-bar2 .fill { height: 100%; background: var(--accent); border-radius: 2px; }
+  .mock-section { margin-top: 22px; padding-top: 18px; border-top: 1px dashed var(--line); }
+  .mock-ai {
+    background: linear-gradient(180deg, #FFF, #FAF7F2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+  }
+  .mock-ai .who {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .mock-ai .msg {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .mock-rec {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    padding: 10px 12px;
+    background: var(--accent-soft);
+    border-radius: 6px;
+    font-size: 12px;
+    align-items: flex-start;
+  }
+  .mock-rec-num {
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .mock-rec-text {
+    color: var(--accent-deep);
+    line-height: 1.45;
+    font-weight: 500;
+  }
+
+  /* Next steps */
+  .next {
+    padding: 110px 0;
+    border-top: 1px solid var(--line);
+    text-align: left;
+  }
+  .next h2 {
+    max-width: 760px;
+    margin-bottom: 28px;
+  }
+  .next-lede {
+    max-width: 620px;
+    font-size: 1.15rem;
+    margin-bottom: 48px;
+  }
+  .next-questions {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 56px;
+    counter-reset: nq;
+  }
+  .next-questions li {
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+    counter-increment: nq;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 24px;
+    align-items: baseline;
+  }
+  .next-questions li:before {
+    content: counter(nq, decimal-leading-zero);
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--accent);
+  }
+  .next-questions li:last-child { border-bottom: 1px solid var(--line); }
+  .next-questions p {
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem;
+    line-height: 1.35;
+    color: var(--ink);
+    font-weight: 400;
+  }
+
+  .cta-block {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 56px 48px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: center;
+  }
+  @media (max-width: 720px) {
+    .cta-block { grid-template-columns: 1fr; padding: 40px 28px; text-align: center; }
+  }
+  .cta-block h3 {
+    font-family: 'Fraunces', serif;
+    color: var(--bg);
+    font-size: 1.7rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .cta-block p {
+    color: #C8C4BD;
+    max-width: 460px;
+  }
+  .cta-btn {
+    background: var(--accent);
+    color: white;
+    padding: 16px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background .15s, transform .15s;
+  }
+  .cta-btn:hover { background: var(--accent-deep); transform: translateY(-1px); opacity: 1; }
+
+  /* Footer */
+  footer.bot {
+    border-top: 1px solid var(--line);
+    padding: 36px 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  footer.bot a { color: var(--muted); border-bottom-color: var(--line); }
+
+  /* Reveal animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .8s ease, transform .8s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brandmark">
+      <span class="dot"></span>
+      <span>GeekendZone</span>
+    </div>
+    <div class="top-label">Propuesta · Full Color Painting</div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-kicker reveal">Una propuesta de crecimiento</div>
+    <h1 class="reveal">
+      Hagamos que <em class="italic">Full Color Painting</em> sea la primera opción cuando alguien en Gainesville busca <span class="accent">un pintor</span>.
+    </h1>
+    <p class="hero-lede reveal">
+      Después de analizar su sitio, su presencia en Google y a sus competidores, identificamos las cosas concretas que están frenando el crecimiento — y un plan claro para mejorarlas. Esta propuesta explica qué encontramos, qué proponemos cambiar, y por qué cada cambio importa.
+    </p>
+    <div class="hero-meta reveal">
+      <div class="hero-meta-item">
+        <div class="label">Preparado para</div>
+        <div class="value">Full Color Painting, LLC</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="label">Preparado por</div>
+        <div class="value">GeekendZone · geekendzone.com</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="label">Fecha</div>
+        <div class="value">Mayo 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SITUATION -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">El punto de partida</div>
+      <h2>Cómo se ve su sitio hoy</h2>
+      <p>Empezamos por entender qué tienen, porque es el cimiento sobre el que construimos. Esto es lo que encontramos — lo bueno y lo que está limitando su crecimiento.</p>
+    </div>
+
+    <div class="status-grid">
+      <div class="status-card good reveal">
+        <h3><span class="pill good">✓</span> Lo que está bien</h3>
+        <ul>
+          <li>
+            <strong>El sitio carga rápido y se ve bien en móvil.</strong>
+            La base técnica es sólida; no hay que reconstruir desde cero.
+          </li>
+          <li>
+            <strong>Aparecen en Google cuando alguien busca su nombre.</strong>
+            Tienen presencia básica establecida.
+          </li>
+          <li>
+            <strong>Tienen estructura de páginas amplia.</strong>
+            Servicios, áreas de servicio, blog, contacto — el inventario está, falta optimizar.
+          </li>
+          <li>
+            <strong>El sitio es seguro y técnicamente estándar.</strong>
+            HTTPS, mapa del sitio, configuración básica — todo correcto.
+          </li>
+        </ul>
+      </div>
+
+      <div class="status-card warn reveal">
+        <h3><span class="pill warn">!</span> Lo que frena el crecimiento</h3>
+        <ul>
+          <li>
+            <strong>La descripción que ve la gente en Google dice "Trusted by leading brands".</strong>
+            Aparece igual en todas sus páginas. No menciona pintura, ni Gainesville, ni qué hacen. Quien busca un pintor pasa de largo.
+          </li>
+          <li>
+            <strong>Google no sabe que ustedes son un negocio local de pintura.</strong>
+            Falta una ficha digital invisible que se lo diga. Sin ella, no aparecen en el "Map Pack" (las 3 empresas con mapa que salen primero).
+          </li>
+          <li>
+            <strong>Sus 14 páginas de ciudades son casi idénticas.</strong>
+            Gainesville y Ocala dicen literalmente lo mismo, cambiando solo el nombre. Google detecta esto y las baja en los resultados.
+          </li>
+          <li>
+            <strong>30 de cada 100 imágenes no tienen descripción.</strong>
+            Afecta accesibilidad (riesgo legal ADA en Florida) y SEO de imagen.
+          </li>
+          <li>
+            <strong>No hay un sistema para pedir reseñas constantes.</strong>
+            En 2026 las reseñas recientes pesan más que el total acumulado. Sin ritmo, pierden ranking local.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPPORTUNITIES -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">El plan</div>
+      <h2>Lo que proponemos mejorar</h2>
+      <p>Seis mejoras concretas. Cada una explica qué cambia, por qué importa, y qué impacto esperamos. No tienen que decidir sobre todas hoy — más adelante les preguntamos qué les hace más sentido.</p>
+    </div>
+
+    <div class="opps">
+
+      <div class="opp reveal">
+        <div class="opp-number">01</div>
+        <div class="opp-body">
+          <h3>Hacer que cada página se presente bien en Google</h3>
+          <div class="opp-rows">
+            <div class="opp-row-label">Qué hacemos</div>
+            <div class="opp-row-value">Reescribimos el título y la descripción de sus páginas principales para que mencionen pintura, la ciudad y lo que los hace distintos.</div>
+
+            <div class="opp-row-label">Por qué importa</div>
+            <div class="opp-row-value">El texto que aparece en los resultados de Google decide si la gente hace click o pasa de largo. Hoy todas dicen "Trusted by leading brands" — no le dice nada útil a quien busca un pintor.</div>
+
+            <div class="opp-row-label">Impacto</div>
+            <div class="opp-row-value">Estimamos entre 20% y 40% más clicks desde Google en las páginas con mayor búsqueda, sin esfuerzo extra de tráfico.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="opp reveal">
+        <div class="opp-number">02</div>
+        <div class="opp-body">
+          <h3>Decirle a Google "somos un negocio de pintura en Gainesville"</h3>
+          <div class="opp-rows">
+            <div class="opp-row-label">Qué hacemos</div>
+            <div class="opp-row-value">Agregamos una "ficha digital" invisible que le dice a Google quiénes son, qué hacen, dónde, qué horarios, qué servicios y cuántas estrellas tienen en promedio.</div>
+
+            <div class="opp-row-label">Por qué importa</div>
+            <div class="opp-row-value">Sin esa ficha, Google los trata como un sitio cualquiera. Esta es <strong>la pieza más importante</strong> para aparecer en el Map Pack y mostrar reseñas con estrellas en los resultados.</div>
+
+            <div class="opp-row-label">Impacto</div>
+            <div class="opp-row-value">Condición necesaria para competir en búsqueda local. Sin esto, los demás esfuerzos rinden la mitad.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="opp reveal">
+        <div class="opp-number">03</div>
+        <div class="opp-body">
+          <h3>Dar identidad real a cada ciudad que sirven</h3>
+          <div class="opp-rows">
+            <div class="opp-row-label">Qué hacemos</div>
+            <div class="opp-row-value">Reescribimos las páginas de las 3 ciudades principales (Gainesville, Ocala, Newberry) con contenido único — barrios que sirven, ejemplos reales de trabajos, reseñas de clientes locales.</div>
+
+            <div class="opp-row-label">Por qué importa</div>
+            <div class="opp-row-value">Google premia páginas únicas y útiles. Cuando 14 páginas son casi iguales cambiando solo el nombre de la ciudad, Google penaliza a todas — no solo a esas páginas, sino al sitio completo.</div>
+
+            <div class="opp-row-label">Impacto</div>
+            <div class="opp-row-value">Cada ciudad recupera ranking local. El sitio entero gana autoridad. Las demás 11 ciudades pueden ajustarse después si quieren extender el esfuerzo.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="opp reveal">
+        <div class="opp-number">04</div>
+        <div class="opp-body">
+          <h3>Describir todas las imágenes</h3>
+          <div class="opp-rows">
+            <div class="opp-row-label">Qué hacemos</div>
+            <div class="opp-row-value">Agregamos descripción a las 30 imágenes que no la tienen y renombramos las fotos con nombres genéricos (por ejemplo, <code>20210624_154435.jpg</code> pasa a algo como <code>exterior-painting-gainesville-victorian.jpg</code>).</div>
+
+            <div class="opp-row-label">Por qué importa</div>
+            <div class="opp-row-value">Las imágenes describen el trabajo. Google las usa para entender qué hacen, y aparecen en Google Imágenes (otro canal de búsqueda). Además, sin descripción hay riesgo legal de accesibilidad (ADA) en Florida.</div>
+
+            <div class="opp-row-label">Impacto</div>
+            <div class="opp-row-value">Más visibilidad en Google Imágenes + protección legal + sitio más profesional ante quien lo audite.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="opp reveal">
+        <div class="opp-number">05</div>
+        <div class="opp-body">
+          <h3>Optimizar el perfil de Google Business</h3>
+          <div class="opp-rows">
+            <div class="opp-row-label">Qué hacemos</div>
+            <div class="opp-row-value">Revisamos y completamos categorías, atributos (acepta presupuestos gratis, ofrece financiamiento), galería organizada por servicio, y dejamos preparadas las primeras 4 semanas de publicaciones.</div>
+
+            <div class="opp-row-label">Por qué importa</div>
+            <div class="opp-row-value">El perfil de Google Business es <strong>el factor número uno</strong> para aparecer en el Map Pack en 2026 — incluso más importante que el sitio web. Muchos pintores ganan trabajos sin que nadie visite su página, solo desde Google Maps.</div>
+
+            <div class="opp-row-label">Impacto</div>
+            <div class="opp-row-value">Más visibilidad en búsquedas con mapa, donde está el grueso de las llamadas y solicitudes de presupuesto.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="opp reveal">
+        <div class="opp-number">06</div>
+        <div class="opp-body">
+          <h3>Sistema simple para mantener reseñas constantes</h3>
+          <div class="opp-rows">
+            <div class="opp-row-label">Qué hacemos</div>
+            <div class="opp-row-value">Les entregamos una plantilla: un código QR + un email automático para enviar al cliente después de cada trabajo, llevándolo directo a dejar la reseña en Google. Ustedes lo operan, nosotros lo preparamos.</div>
+
+            <div class="opp-row-label">Por qué importa</div>
+            <div class="opp-row-value">En 2026, Google prioriza el <em>ritmo</em> de reseñas nuevas sobre el total acumulado. Una empresa con 80 reseñas y una nueva cada semana le gana a una con 200 reseñas y nada en seis meses.</div>
+
+            <div class="opp-row-label">Impacto</div>
+            <div class="opp-row-value">Cada reseña nueva refuerza su ranking local. Es la mejora con mayor retorno por menor esfuerzo si la mantienen.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BILINGUAL OPTION -->
+<section class="bilingual">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Una oportunidad que ningún competidor está aprovechando</div>
+      <h2>Atender a la comunidad hispana de Gainesville en su idioma</h2>
+      <p>Gainesville tiene una comunidad latina relevante — la Universidad de Florida atrae estudiantes y familias hispanohablantes, y el condado Alachua tiene crecimiento sostenido en esa demografía.</p>
+    </div>
+
+    <div class="bilingual-grid">
+      <div class="bilingual-card reveal">
+        <h3>El hueco en el mercado</h3>
+        <p>Revisamos a sus principales competidores en Gainesville — CorsPaint, North Florida Painting, Gainesville Painting Company, That 1 Painter. <strong>Ninguno tiene su sitio en español.</strong> Quien busca "pintor en Gainesville" no encuentra a nadie hablándole en su idioma.</p>
+        <div class="bilingual-stat">0 / 4</div>
+        <p>competidores directos sirviendo en español hoy.</p>
+      </div>
+      <div class="bilingual-card reveal">
+        <h3>Qué haríamos si lo eligen</h3>
+        <p>Crearíamos una versión completa del sitio en español, con la configuración correcta para que Google le muestre a cada visitante la versión apropiada — inglés si busca en inglés, español si busca en español. No se mezcla, no se duplica.</p>
+        <p>Traducción humana, no automática. (Google penaliza las traducciones automáticas masivas desde 2024.)</p>
+        <div class="bilingual-quote">
+          Es la palanca más rápida de diferenciación que tienen frente a competidores con 20–30 años de antigüedad en el mercado.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section class="dashboard-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Independencia operativa</div>
+      <h2>Un centro de control para que ustedes lleven el timón</h2>
+      <p>Una de las cosas que queremos darles es independencia: que puedan ver cómo va su SEO, cómo van las reseñas, y qué hacer cada semana — sin depender de llamarnos. Por eso planteamos construirles un panel propio.</p>
+    </div>
+
+    <div class="dash-grid">
+      <div class="dash-text reveal">
+        <h3 style="font-family: 'Fraunces', serif; font-size: 1.6rem; font-weight: 500; margin-bottom: 18px;">Lo que verían en el panel</h3>
+
+        <ul class="dash-features">
+          <li>
+            <span class="icn">01</span>
+            <div>
+              <strong>¿Cómo está mi SEO hoy?</strong>
+              <p>Un puntaje claro, las palabras por las que están apareciendo en Google, alertas si algo se rompe.</p>
+            </div>
+          </li>
+          <li>
+            <span class="icn">02</span>
+            <div>
+              <strong>¿Qué pasa en mi Google Business?</strong>
+              <p>Las reseñas que entran, el ritmo de reseñas nuevas, qué publicar esta semana, qué preguntas frecuentes responder.</p>
+            </div>
+          </li>
+          <li>
+            <span class="icn">03</span>
+            <div>
+              <strong>Un asistente con IA que responde 24/7</strong>
+              <p>"¿Cómo respondo este review negativo?", "¿qué post publico esta semana?", "¿por qué bajé en Google?". Conoce su negocio porque vive dentro de su panel.</p>
+            </div>
+          </li>
+          <li>
+            <span class="icn">04</span>
+            <div>
+              <strong>Recomendaciones automáticas cada lunes</strong>
+              <p>Tres acciones priorizadas para la semana, generadas analizando sus propios datos. Sin tener que adivinar.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="dash-mock reveal">
+        <div class="mock">
+          <div class="mock-bar">
+            <span class="mock-dot red"></span>
+            <span class="mock-dot yel"></span>
+            <span class="mock-dot grn"></span>
+            <span class="mock-url">panel.geekendzone.com / fullcolor</span>
+          </div>
+          <div class="mock-body">
+            <div class="mock-h">SEO Health · esta semana</div>
+            <div class="mock-score">82<span class="pct">/100</span><span class="mock-trend">↑ +6</span></div>
+
+            <div class="mock-row">
+              <span class="lbl">Apariciones en Google (7d)</span>
+              <span class="val">1,247</span>
+            </div>
+            <div class="mock-bar2"><div class="fill" style="width: 72%"></div></div>
+
+            <div class="mock-row">
+              <span class="lbl">Reseñas nuevas este mes</span>
+              <span class="val">4</span>
+            </div>
+            <div class="mock-bar2"><div class="fill" style="width: 60%"></div></div>
+
+            <div class="mock-row">
+              <span class="lbl">Ritmo de reseñas</span>
+              <span class="val" style="color: var(--good)">Saludable</span>
+            </div>
+
+            <div class="mock-section">
+              <div class="mock-h">Recomendaciones de la semana</div>
+              <div class="mock-rec">
+                <span class="mock-rec-num">1</span>
+                <span class="mock-rec-text">Publicar foto del trabajo en Ocala — galería de servicio está incompleta</span>
+              </div>
+              <div class="mock-rec">
+                <span class="mock-rec-num">2</span>
+                <span class="mock-rec-text">Responder review de Sarah M. (3★) — bajará promedio si no se atiende</span>
+              </div>
+              <div class="mock-rec">
+                <span class="mock-rec-num">3</span>
+                <span class="mock-rec-text">Pedir reseña a los 4 clientes facturados la semana pasada</span>
+              </div>
+            </div>
+
+            <div class="mock-section" style="border-top: 1px solid var(--line); padding-top: 18px;">
+              <div class="mock-ai">
+                <div class="who">Asistente IA · sugerencia</div>
+                <div class="msg">"Su mejor horario para postear en Instagram es martes 7pm. Quieren que les sugiera 3 ideas de post para esta semana?"</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT STEPS -->
+<section class="next">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-head" style="margin-bottom: 32px;">
+        <div class="kicker">Su turno</div>
+      </div>
+      <h2>Esto es lo que vemos. Ahora queremos saber qué les hace sentido a ustedes.</h2>
+      <p class="next-lede">No esperamos un "sí" o un "no" a todo de golpe. Lo más útil que pueden hacer ahora es decirnos qué de esto les resuena, qué no entendieron, y qué les gustaría agregar o cambiar.</p>
+    </div>
+
+    <ol class="next-questions reveal">
+      <li><p>¿Cuál de estas mejoras les parece la más importante para su negocio hoy?</p></li>
+      <li><p>¿Hay algo que <em>no</em> entendieron o que les genera dudas?</p></li>
+      <li><p>¿La opción de tener el sitio también en español les interesa, o prefieren enfocarse solo en inglés?</p></li>
+      <li><p>¿El centro de control les parece útil, o sienten que pueden manejar el SEO con otras herramientas?</p></li>
+      <li><p>¿Hay alguna parte de su negocio (servicios, ciudades, tipos de cliente) que sienten que esta propuesta no está considerando?</p></li>
+    </ol>
+
+    <div class="cta-block reveal">
+      <div>
+        <h3>Conversemos cuando quieran</h3>
+        <p>Una vez tengamos su feedback, armamos un plan ajustado a sus prioridades y a su presupuesto. Ahí discutimos números, tiempos y siguiente paso.</p>
+      </div>
+      <a class="cta-btn" href="mailto:jacedeno@geekendzone.com?subject=Propuesta%20Full%20Color%20Painting%20—%20comentarios">Enviar comentarios →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="bot">
+  <div class="wrap" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+    <span>GeekendZone · <a href="https://geekendzone.com">geekendzone.com</a></span>
+    <span>Propuesta preparada para Full Color Painting, LLC · Mayo 2026</span>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
