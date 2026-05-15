@@ -213,6 +213,8 @@
   }
   .status-card.good { border-color: var(--good-soft); }
   .status-card.warn { border-color: var(--warn-soft); }
+  .status-card.gz { border-color: var(--accent-soft); }
+  .status-card.you { border-color: #DCE2EA; }
   .status-card h3 {
     display: flex;
     align-items: center;
@@ -226,6 +228,8 @@
   }
   .status-card.good h3 { color: var(--good); }
   .status-card.warn h3 { color: var(--warn); }
+  .status-card.gz h3 { color: var(--accent); }
+  .status-card.you h3 { color: #2C5282; }
   .pill {
     width: 26px; height: 26px;
     border-radius: 50%;
@@ -236,6 +240,20 @@
   }
   .pill.good { background: var(--good-soft); color: var(--good); }
   .pill.warn { background: var(--warn-soft); color: var(--warn); }
+  .pill.gz { background: var(--accent-soft); color: var(--accent); }
+  .pill.you { background: #E5EBF2; color: #2C5282; }
+
+  .collab-note {
+    margin-top: 36px;
+    padding: 22px 26px;
+    background: var(--bg-elev);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    font-size: 0.96rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  .collab-note strong { color: var(--ink); }
   .status-card ul {
     list-style: none;
     padding: 0;
@@ -985,6 +1003,81 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- COLLABORATION -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Cómo trabajamos juntos</div>
+      <h2>Lo que aportamos cada uno</h2>
+      <p>Para que esto funcione, hay cosas que hacemos nosotros y cosas que solo ustedes pueden aportar. Esta es la división honesta — sin sorpresas a medio camino.</p>
+    </div>
+
+    <div class="status-grid">
+
+      <div class="status-card gz reveal">
+        <h3><span class="pill gz">✦</span> Lo que entregamos</h3>
+        <ul>
+          <li>
+            <strong>Toda la configuración técnica de su sitio.</strong>
+            Cambios en su WordPress, el código que le dice a Google quiénes son, optimización de imágenes — sin tocar nada que rompa el sitio actual.
+          </li>
+          <li>
+            <strong>El contenido escrito y revisado.</strong>
+            Reescribimos titles, descripciones y las páginas de las ciudades clave. Ustedes aprueban antes de publicar.
+          </li>
+          <li>
+            <strong>Su perfil de Google Business optimizado.</strong>
+            Categorías, atributos, galería organizada por servicio, y las primeras 4 semanas de publicaciones listas para usar.
+          </li>
+          <li>
+            <strong>Las plantillas para mantener reseñas.</strong>
+            Código QR + email automático para que ustedes envíen después de cada trabajo. Listo para que lo usen sin pensar.
+          </li>
+          <li>
+            <strong>El centro de control completo</strong> (si lo eligen).
+            Construcción, instalación, conexión con sus cuentas, y el asistente con IA listo para responderles 24/7.
+          </li>
+          <li>
+            <strong>Soporte mensual continuo.</strong>
+            Monitoreo del panel, una reunión mensual para revisar resultados, ajustes menores incluidos.
+          </li>
+        </ul>
+      </div>
+
+      <div class="status-card you reveal">
+        <h3><span class="pill you">→</span> Lo que necesitamos de ustedes</h3>
+        <ul>
+          <li>
+            <strong>Acceso a sus cuentas para configurarlas.</strong>
+            Su WordPress, perfil de Google Business, Google Analytics, redes sociales. Sin acceso no podemos hacer cambios — y todo el proceso para darnos acceso lo hacemos juntos, paso a paso.
+          </li>
+          <li>
+            <strong>Una o dos reuniones cortas al inicio.</strong>
+            Para alinear sobre voz de marca, prioridades, y conocer su negocio en su propia voz. Una hora cada una, no más.
+          </li>
+          <li>
+            <strong>Información local que solo ustedes saben.</strong>
+            Los barrios donde han trabajado, anécdotas de proyectos memorables, dos o tres clientes en Gainesville y Ocala que podamos citar. Sin esto, las páginas de ciudad suenan genéricas.
+          </li>
+          <li>
+            <strong>Operar el día a día.</strong>
+            El sitio y el panel son herramientas, no reemplazan el trabajo: enviar el QR a los clientes después de cada servicio, responder a las reseñas (con apoyo del asistente IA), decidir qué publicar cada semana.
+          </li>
+          <li>
+            <strong>Fotos de trabajos por ciudad</strong> (si las tienen).
+            Google y los clientes valoran imágenes locales reales más que fotos de stock. Si faltan en alguna ciudad, lo conversamos.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="collab-note reveal">
+      <strong>Una nota práctica sobre tiempos:</strong> algunas conexiones con plataformas externas (Instagram, Facebook, TikTok) requieren aprobación de esas plataformas y suelen tomar de 2 a 4 semanas. Arrancamos esos trámites en paralelo con el resto del trabajo para no frenar el cronograma.
+    </p>
   </div>
 </section>
 
